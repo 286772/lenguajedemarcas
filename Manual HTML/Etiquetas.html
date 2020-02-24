@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Etiquetas</title>
+</head>
+
+<body>
+        <header class="cabecera">
+            <section>
+                <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+            </section>
+
+        </header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    HTML
+                    <ul>
+                        <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                        <li>
+                            Elementos HTML5
+                            <ul>
+                                <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                                <li><a href="Etiquetas.html">Etiquetas</a></li>
+                                <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                                <li><a href="Multimedia.html">Multimedia</a></li>
+                                <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                                <li><a href="Tablas.html">Tablas</a></li>
+                                <li><a href="Formularios.html">Formularios</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a>CSS</a>
+                    <ul>
+                        <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                        <li><a href="Selectores.html">Selectores</a></li>
+                        <li><a href="Propiedades.html">Propiedades</a></li>
+                        <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                        <li><a href="Posicion.html">Posición</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="cuadro_central">
+
+            <section>
+
+                <h1>Etiquetas de sección</h1>
+                <p>En esta seccion definiremos algunas de las etiquetas utilizadas para distribuir el texto en secciones o "cajas"</p>
+                <p>Para una lista completa de las etiquetas: <a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">TODOS LAS ETIQUETAS HTML</a></p>
+
+                <article>
+                    <h2>Tabla resumen</h2>
+                    <table class="tabla_resumen">
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas, en este caso la cabecera-->
+                            <th class="columna_tabla"><b>Etiqueta</b></th>
+                            <th style="text-align: center"><b>Utilización</b></th>
+                        </tr>
+
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>header</ap></td>
+                            <td>Encabezado de la página.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>main</ap></td>
+                            <td>Contenido importante, o principal, de la página.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>footer</ap></td>
+                            <td>Pie de página.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>nav</ap></td>
+                            <td>Sección con enlaces de navegación.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>aside</ap></td>
+                            <td>Contenidos relacionados, de manera lateral, con con el resto de la página.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>section</ap></td>
+                            <td>Sección cualquiera del documento. Como las secciones de un periodico (cultura, deportes, economía...).</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>article</ap></td>
+                            <td>Define contenido autónomo dentro del documento. Como un artículo periodístico.</td>
+                        </tr>
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>h1</ap>...<ap>h6</ap></td>
+                            <td>Titulos y subtitulos. Van desde h1 hasta h6. Cada uno es mas importante que el anterior.</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+            <section>
+                <h1>Etiquetas de agrupación de contenido</h1>
+                <p>En esta seccion definiremos algunas de las etiquetas utilizadas para agrupar los contenidos.</p>
+                <p>Para una lista completa de las etiquetas: <a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">TODOS LAS ETIQUETAS HTML</a></p>
+                <article>
+                    <h2>Tabla resumen</h2>
+                    <table class="tabla_resumen">
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas, en este caso la cabecera-->
+                            <th class="columna_tabla"><b>Etiqueta</b></th>
+                            <th style="text-align: center"><b>Utilización</b></th>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>p</ap></td>
+                            <td>El texto se muestra como un párrafo.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>pre</ap></td>
+                            <td>Contenido preformateado.El formato se preserva.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>blockcuote</ap></td>
+                            <td>Contenido citado desde otra fuente.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>figure</ap></td>
+                            <td>Para insertar una imagen, grafico, diagrama...Su contenido es independiente del flujo principal de HTML.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>figcaption</ap></td>
+                            <td>Inserta una caja de texto en una imagen. Se anida dentro de <ap>figure</ap>.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>div</ap></td>
+                            <td>Contenedor genérico, sin significado. Es el contenedor mas "limpio" (no lleva estilo implicito).</td>
+                        </tr>
+                        <!-- Filas -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>br</ap></td>
+                            <td>Salto de línea. Es una etiqueta vacia por lo que no necesita cierre.Se declara como <ap>br</ap> o como <ap>br/</ap>.</td>
+                        </tr>
+                        <!-- Filas -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>hr</ap></td>
+                            <td>División de apartados. Coloca una linea horizontal, ademas de un salto de línea. Es una etiqueta vacia por lo que no necesita cierre.Se declara como <ap>hr</ap> o como <ap>hr/</ap>.</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+            <section>
+                <h1>Etiquetas para listas</h1>
+                <p>En esta seccion definiremos algunas de las etiquetas utilizadas para elaborar listas.</p>
+                <p>Para una lista completa de las etiquetas: <a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">TODOS LAS ETIQUETAS HTML</a></p>
+                <article>
+                    <h2>Tabla resumen</h2>
+                    <table class="tabla_resumen">
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas, en este caso la cabecera-->
+                            <th class="columna_tabla"><b>Etiqueta</b></th>
+                            <th style="text-align: center"><b>Utilización</b></th>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>ol</ap></td>
+                            <td>Define una lista ordenada y numerada. Coloca numeros en orden a la izquierda de los elementos.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>ul</ap></td>
+                            <td>Define una lista desordenada. Coloca viñetas (bolos) a la izquierda de los elementos anidados dentro de ella.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>li</ap></td>
+                            <td>Cada elemento de una lista ordenada o desordenada. Se anidan dentro de <ap>ol</ap> o <ap>ul</ap>. Dentro de estos pueden anidarse <ap>ol</ap> y <ap>ul</ap> para crear listas anidadas.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>dl</ap></td>
+                            <td>Lista de definiciones. Es una lista de términos y sus definiciones asociadas.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>dt</ap></td>
+                            <td>Término a definir. Se definira por el siguiente <ap>dd</ap>. Si hay mas de uno se anidan dentro de <ap>dl</ap>. </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>dd</ap></td>
+                            <td>Definición de un término. Define al anterior <ap>dt</ap>. Si hay mas de uno se anidan dentro de <ap>dl</ap>. </td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h2>Atributos propios de las listas</h2>
+                    <h3>Atributos <ap>ol</ap></h3>
+                    <ul>
+                        <li>
+                            <em>compact</em>:Valor booleano, esta o no esta (se declara solo, sin = y sin <i>"valor"</i>. Especifica que la lista es mas pequeña que lo normal.
+                            <strong>No</strong> se admite en <strong>HTML 5</strong> (deberia utilizarse CSS).
+                        </li>
+                        <li><em>reversed</em>: El orden de la lista será en valores descendentes (9,8,7...).</li>
+                        <li><em>start</em>: Especifica en que número comenzará la lista. Como valor acepta un número.</li>
+                        <li>
+                            <em>type</em>: Especifica el tipo de marcador que se utilizará en la lista. Como valores acepta:
+                            <ul>
+                                <li>"1"</li>
+                                <li>"A"</li>
+                                <li>"a"</li>
+                                <li>"I"</li>
+                                <li>"i"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Atributos <ap>ul</ap></h3>
+                    <ul>
+                        <li>
+                            <em>compact</em>:Valor booleano, esta o no esta (se declara solo, sin = y sin <i>"valor"</i>. Especifica que la lista es mas pequeña que lo normal.
+                            <strong>No</strong> se admite en <strong>HTML 5</strong> (deberia utilizarse CSS).
+                        </li>
+                        <li>
+                            <em>type</em>: Especifica el tipo de marcador que se utilizará en la lista. <strong>No</strong> se admite en <strong>HTML 5</strong> (deberia utilizarse CSS). Como valores acepta:
+                            <ul>
+                                <li>"disc"</li>
+                                <li>"square"</li>
+                                <li>"circle"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <h3>Atributos <ap>li</ap></h3>
+                    <ul>
+                        <li><em>value</em>: Especifica en que número de este elemento en la lista. Como valor acepta un número. En listas ordenadas (<ap>ol</ap>), el valor se incrementará desde este número.</li>
+                        <li>
+                            <em>type</em>: Especifica el tipo de marcador que se utilizará en la lista. <strong>No</strong> se admite en <strong>HTML 5</strong> (deberia utilizarse CSS). Como valores acepta:
+                            <ul>
+                                <li>"1"</li>
+                                <li>"A"</li>
+                                <li>"a"</li>
+                                <li>"I"</li>
+                                <li>"i"</li>
+                                <li>"disc"</li>
+                                <li>"square"</li>
+                                <li>"circle"</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Ejemplos de listas</h2>
+                    <h3>Declaración de Listas</h3>
+                    <!-- En este ejemplo no utilizo mis etiquetas habituales <a> y <cr> para que se vea que sé como utilizar los carácteres de escape. -->
+                    <pre class="cuadro_declaracion">
+                    &lt;ol&gt;
+                        &lt;li&gt;Elemento 1&lt;/li&gt;
+                        &lt;li&gt;Elemento 2
+                            &lt;ul&gt;
+                                &lt;li&gt;Elemento 2 submenu&lt;/li&gt;
+                                &lt;li&gt;Elemento 2 submenu&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;Elemento 3&lt;/li&gt;
+                    &lt;/ol&gt;
+                </pre>
+                    <h3>Visualización de Listas</h3>
+                    <div class="cuadro_visualizacion">
+                        <ol>
+                            <li>Elemento 1</li>
+                            <li>
+                                Elemento 2
+                                <ul>
+                                    <li>Elemento 2 submenu</li>
+                                    <li>Elemento 2 submenu</li>
+                                </ul>
+                            </li>
+                            <li>Elemento 3</li>
+                        </ol>
+                    </div>
+                    <h3>Declaración de Listas de Definiciones</h3>
+                    <!-- En este ejemplo no utilizo mis etiquetas habituales <a> y <cr> para que se vea que sé como utilizar los carácteres de escape. -->
+                    <pre class="cuadro_declaracion">
+                    &lt;dl&gt;
+                        &lt;dt&gt;Palabra a definir: Difícil&lt;/dt&gt;
+                        &lt;dd&gt;Definición: Que presenta obstáculos&lt;/dd&gt;
+                        &lt;dt&gt;Palabra a definir: Fácil&lt;/dt&gt;
+                        &lt;dd&gt;Definición: Que no requiere gran esfuerzo, habilidad o capacidad&lt;/dd&gt;
+                    &lt;/dl&gt;
+                </pre>
+                    <h3>Visualización de Listas de Definiciones</h3>
+                    <div class="cuadro_visualizacion">
+                        <dl>
+                            <dt>Difícil:</dt>
+                            <dd>Que presenta obstáculos</dd>
+                            <dt>Fácil:</dt>
+                            <dd>Que no requiere gran esfuerzo, habilidad o capacidad</dd>
+                        </dl>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <h1>Etiquetas semánticas de texto</h1>
+                <p>En esta seccion definiremos algunas de las etiquetas utilizadas para la semantica de texto.</p>
+                <p>Para una lista completa de las etiquetas: <a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos">TODOS LAS ETIQUETAS HTML</a></p>
+                <article>
+                    <h2>Tabla resumen</h2>
+                    <table class="tabla_resumen">
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas, en este caso la cabecera-->
+                            <th class="columna_tabla"><b>Etiqueta</b></th>
+                            <th style="text-align: center"><b>Utilización</b></th>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>a</ap></td>
+                            <td>Representa un hiperenlace. Hablaremos de ellos mas adelante</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>em</ap></td>
+                            <td>Etiqueta para un texto enfatizado.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>strong</ap></td>
+                            <td>Para resaltar partes importantes de un texto.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>small</ap></td>
+                            <td>Para realizar comentarios aparte (textos legales, notas explicativas...).</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>cite</ap></td>
+                            <td>Marca una referencia a una fuente o el autor de un texto citado.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>q</ap></td>
+                            <td>Representa una cita textual (dentro de la linea). Puede contener el atributo propio, <strong>opcional</strong>, <em>cite</em>.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>dfn</ap></td>
+                            <td>Un termino cuya definicion se encuentra en la etiqueta padre más próxima.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>abbr</ap></td>
+                            <td>Representa una abreviación o un acronimo.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>data</ap></td>
+                            <td>
+                                Vincula el contenido de la etiqueta a una version del mismo legible por una máquina (programa).
+                                Esta version legible para la maquina la colocaremos en el atributo <strong>obligatorio</strong> <em>value</em> asociado.
+                            </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>time</ap></td>
+                            <td>
+                                Sirve para introducir un periodo especifico de tiempo.
+                                Esto suele ser, una hora (formato 24 horas), una fecha del Calendario Gregoriano, o cualquier periodo de tiempo <strong>válido</strong>.
+                                Su contenido sera legible para la máquina si lo colocamos correctamente dentro del atributo <strong>opcional</strong> <em>datetime</em>.
+                            </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>code</ap></td>
+                            <td>Representa un código informatico o de ordenador.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>var</ap></td>
+                            <td>Representa una <em>variable</em>(como expresion matemática o de programación) o similares (constantes, simbolos de física...). </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>samp</ap></td>
+                            <td>Representa un <em>output</em> (salida) de un programa informático.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>sub</ap><br /><ap>sup</ap></td>
+                            <td>
+                                Representan un <em>subíndice</em> y un <em>superíndice</em> respectivamente. Coloca un tipo de letra menor y ademas lo coloca más arriba o más abajo del centro de la línea.
+                                Es útil para representar un número elevado a una potencia (2<sup>3</sup>) o para introducir marcas como el copyright (Nacho<sub>&copy;</sub>).
+                            </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>i</ap></td>
+                            <td>Coloca el texto en <i>itálica</i> (<i>cursiva</i>).</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>b</ap></td>
+                            <td>Coloca el texto en <b>nengrita</b>.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>u</ap></td>
+                            <td>Muestra el texto <u>subrayado</u>.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>s</ap></td>
+                            <td>Muestra el texto <s>tachado</s>. Se utiliza para el texto que ya no es correcto.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>mark</ap></td>
+                            <td>Muestra el texto <mark>marcado</mark> (como con rotulador fluorescente).</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>bdi</ap></td>
+                            <td>
+                                Texto que permite cambiar la direccionalidad del texto de manera <strong>aislada</strong> (el atributo asociado <em>dir</em> <strong>no se hereda</strong>).
+                                Sirve para introducir texto en idiomas que se leen en otras direcciones.
+                            </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>bdo</ap></td>
+                            <td>
+                                Texto que permite cambiar la direccionalidad del texto de manera <strong>heredada</strong> (el atributo asociado <em>dir</em> <strong>se hereda</strong>).
+                                Sirve para introducir texto en idiomas que se leen en otras direcciones.
+                            </td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>span</ap></td>
+                            <td>Etiqueta de marcado sin un significado específico. Sirve para marcar contenido y poder atribuirle una <em>class</em> o un <em>id</em>, por ejemplo.</td>
+                        </tr>
+                        <!-- Fila -->
+                        <tr>
+                            <!-- Columnas -->
+                            <td class="columna_tabla"><ap>wbr</ap></td>
+                            <td>
+                                Representa la oportunidad de un salto de linea. Donde se coloque la etiqueta indica los saltos de linea que se podran realizar.
+                                Se utiliza en texto sin espacios demasiado largo para una linea (URLs por ejemplo).
+                            </td>
+                        </tr>
+                    </table>
+                </article>
+                <article>
+                    <h2>Etiquetas con caracteristicas especiales</h2>
+                    <h3><ap>q</ap></h3>
+                    <p>Puede contener el atributo propio, <strong>opcional</strong>, <em>cite</em>. El valor de este atributo ha de ser una URL que referencia a la cita.</p>
+                    <h3><ap>abbr</ap></h3>
+                    <p>
+                        Puede contener el atributo general, <strong>opcional</strong>, <em>title</em>.
+                        La etiqueta otorga propiedades semánticas especiales a este atributo (como , por ejemplo, que <strong>no se hereda</strong>.
+                        El valor de este atributo solo ha de contener la definición del acronimo, nada más.
+                    </p>
+                    <h3><ap>data</ap></h3>
+                    <p>El atributo <strong>obligatorio</strong> <em>value</em> ha de tener como valor la traducción legible, para la máquina, del contenido de la etiqueta.</p>
+                    <h3><ap>time</ap></h3>
+                    <p>
+                        El atributo <strong>obligatorio</strong> <em>value</em> sirve para insertar una fecha u hora que una máquina pueda interpretar. Algunos valores válidos para este atributo son:
+                        <ul>
+                            <li>Cadena válida de año: <span class="cuadro_declaracion">2020</span></li>
+                            <li>Cadena válida de mes: <span class="cuadro_declaracion">2020-02</span></li>
+                            <li>Cadena válida de fecha: <span class="cuadro_declaracion">2020-01-23</span></li>
+                            <li>Cadena válida de fecha sin año: <span class="cuadro_declaracion">02-23</span></li>
+                            <li>Cadena válida de semana: <span class="cuadro_declaracion">2020-W15</span></li>
+                            <li>
+                                Cadenas válidas de hora: <span class="cuadro_declaracion">15:03</span> ||
+                                <span class="cuadro_declaracion">15:03:24</span> ||
+                                <span class="cuadro_declaracion">15:03:24.315</span>
+                            </li>
+                        </ul>
+                    </p>
+                    <h3><ap>bdi</ap></h3>
+                    <p>
+                        Crea una diferencia semántica para el atributo genérico, <strong>opcional</strong> <em>dir</em>, ya que este <strong>no se hereda</strong>.
+                        Si este no esta definido, su valor por defecto es <i>"auto"</i>, permitiendo al navegador decidir la dirección del texto basandose en el contexto del elemento.
+                    </p>
+                    <h3><ap>bdo</ap></h3>
+                    <p>
+                        Anula de forma explícita al algoritmo bidireccional Unicode.
+                        Hay que declarar el atributo <em>dir</em> con el valor <i>"ltr"</i>, para la izquierda, o <i>"rtl"</i>, para la derecha.
+                    </p>
+                </article>
+            </section>
+        </main>
+        <footer class="pie">
+            <p class="nombre">Creado por: Nacho Salas</p>
+        </footer>
+</body>
+</html>

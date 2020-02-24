@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Contenido Encajado</title>
+</head>
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="cuadro_central">
+        <section>
+            <h1>Imágenes</h1>
+            Se utiliza la etiqueta <ap>img</ap>. <strong>.Únicamente</strong> se declara la etiqueta de apertura, <strong>no</strong> la de cierre (es una etiqueta vacía). Se puede anidar dentro de la etiqueta <ap>figure</ap> para sacarla del flujo HTM y añadir un comentario al pie con la etiqueta <ap>figcaption</ap>.
+            <h2>Atributos</h2>
+            <ul>
+                <li><em>src</em>: Este atributo es <strong>obligatorio</strong>.En su <em>"valor"</em> se ha de especificar la URL de la imagen.</li>
+                <li><em>width</em>: Ancho de la imagen. Su <em>"valor"</em> se especifica en píxeles (px).</li>
+                <li><em>heigth</em>: Alto de la imagen. Su <em>"valor"</em> se especifica en píxeles (px).</li>
+                <li><em>alt</em>: Texto alternativo que se muestra si la imagen no puede cargarse.</li>
+                <li><em>usemap</em>: Sirve para definir la imagen como la utilizada para crear un mapa de imágenes. Su valor ha de ser # seguido del <em>name</em> del <ap>map</ap>.</li>
+            </ul>
+            <h2>Ejemplo de declaración</h2>
+            <pre class="cuadro_declaracion">
+        &lt;figure&gt;
+            &lt;img src=gifs/hadoken.gif&gt;&lt;/img&gt;
+            &lt;figcaption&gt;¡HADOKEN!&lt;/figcaption&gt;
+        &lt;/figure&gt;
+</pre>
+            <h2>Ejemplos de visualización</h2>
+            <figure>
+                <img src=gifs/hadoken.gif>
+                <figcaption>¡HADOKEN!</figcaption>
+            </figure>
+            <figure>
+                <img src=imagenes/harold.jpg>
+                <figcaption>¡SONRIE!</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h1>Mapas de imágenes</h1>
+            <p>
+                Es una imágen, dividida en áreas en las que se puede hacer click. Se declara con la etiqueta<ap>map</ap>.
+                Dentro de ella se anidan las etiquetas <ap>area</ap> que seccionaran la imagen en diferentes areas.
+            </p>
+            <h2>Atributos</h2>
+            <p>El primer atributo, <strong>obligatorio</strong>, es <em>name</em>, que se coloca dentro de la etiqueta <ap>map</ap>. Es el nombre del mapa de imágenes. declararemos una imagen con el atributo <em>usemap</em> y en el valor de este pondremos el <i>"#name_del_map"</i></p>
+            <p>El resto de los atributos se colocan dentro de las diferentes etiquetas <ap>area</ap> que se anidaran dentro de <ap>map<strong>. Únicamente</strong> se declara la etiqueta de apertura, <strong>no</strong> la de cierre (es una etiqueta vacía). Estos son:</ap></p>
+            <ul>
+                <li><em>"alt"</em>: Texto alternativo que se mostrará si no se muestra la imágen.<strong>Obligatorio</strong> si hay <em>href</em>.</li>
+                <li><em>"href"</em>: Hipervínculo del área. Es <strong>"obligatorio"</strong>. O se pone este o <em>nohref</em>.</li>
+                <li><em>"nohref"</em>: Indica que no hay hipervínculo en el área. Es <strong>"obligatorio"</strong>. O se pone este o <em>href</em>.</li>
+                <li>
+                    <em>"shape"</em>: Forma del área. Los <em>"valores"</em> pueden ser:
+                    <ul>
+                        <li><i>"circle"</i>: Círculo</li>
+                        <li><i>"poly"</i>: Polígono</li>
+                        <li><i>"rect"</i>: Un rectangulo. No es soportada por todos los navegadores.</li>
+                        <li><i>"default"</i>: Toda región mas allá de un área definida.</li>
+                    </ul>
+                </li>
+                <li>
+                    <em>"coords"</em>: conjunto de valores que especifican el tamaño del área. Forma del área. Los valores van en píxeles (px). Segun la forma se declaran de una manera u otra:
+                    <ul>
+                        <li>Rectangulo: x-izquierda, y-arriba, x-derecha, y-abajo</li>
+                        <li>Círculo: x-centro, y-centro, radio</li>
+                        <li>Polígono: x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>,...,x<sub>n</sub>, y<sub>n</sub></li>
+                    </ul>
+                </li>
+                <li><em>download</em>: Igual que en los <a href="hipervinculos.html#att_download">Hiperenlaces</a></li>
+                <li><em>target</em>: Igual que en los <a href="hipervinculos.html#att_target">Hiperenlaces</a></li>
+            </ul>
+            <h2>Ejemplo de declaración</h2>
+            <pre class="cuadro_declaracion">
+            &lt;img src=imagenes/paisajesimetrico.jpg usemap="#mapaimagenes"&gt;
+            &lt;map id="mapaimagenes" name="mapaimagenes"&gt;
+                &lt;area shape="rect" coords="0,0,910,198" alt="Cielo" href="https://es.wikipedia.org/wiki/Cielo" target="_blank"&gt;
+                &lt;area shape="rect" coords="0,199,910,430" alt="Cielo" href="https://es.wikipedia.org/wiki/%C3%81rbol" target="_blank"&gt;
+                &lt;area shape="rect" coords="0,431,910,606" alt="Cielo" href="https://es.wikipedia.org/wiki/Suelo" target="_blank"&gt;
+            &lt;/map&gt;
+</pre>
+            <h2>Ejemplo de visualización</h2>
+            <img src=imagenes/paisajesimetrico.jpg usemap="#mapaimagenes">
+
+            <map id="mapaimagenes" name="mapaimagenes">
+                <area shape="rect" coords="0,0,910,198" alt="Cielo" href="https://es.wikipedia.org/wiki/Cielo" target="_blank">
+                <area shape="rect" coords="0,199,910,430" alt="Cielo" href="https://es.wikipedia.org/wiki/%C3%81rbol" target="_blank">
+                <area shape="rect" coords="0,431,910,606" alt="Cielo" href="https://es.wikipedia.org/wiki/Suelo" target="_blank">
+            </map>
+        </section>
+
+        <section>
+            <h1>Iframes</h1>
+            <p>Sirven para insertar otro documento dentro del documento HTML (como otro HTML). Se declaran con la etiqueta <ap>iframe</ap>.</p>
+            <p>Se recomienda añadir un texto dentro de la etiqueta para que se muestre si el navegador no soporta Iframes.</p>
+            <h2>Atributos</h2>
+            <p>Únicamente enumero los atributos soportados por HTML 5. Estos son:</p>
+            <ul>
+                <li><em>src</em>: En su <em>"valor"</em> se especifica la URL del documento.</li>
+                <li><em>srcdoc</em>: En su <em>"valor"</em> se especifica el contenido HTML (en formato HTML) para que el <ap>iframe</ap> lo muestre.</li>
+                <li><em>width</em>: Ancho del <ap>iframe</ap>. Su <em>"valor"</em> se especifica en píxeles (px).</li>
+                <li><em>heigth</em>: Alto del <ap>iframe</ap>. Su <em>"valor"</em> se especifica en píxeles (px).</li>
+                <li><em>alt</em>: Texto alternativo que se muestra si la imagen no puede cargarse.</li>
+                <li>
+                    <em>sandbox</em>: Impone restricciones adicionales al Iframe.
+                    Dentro de este atributo, se le pueden dar valores (booleanos), para que <strong>permita</strong> algunas de las acciones que ha restringido.
+                    Algunos valores son:
+                    <ul>
+                        <li><em>""</em>: Sin valor. Aplica todas las restricciones al Iframe.</li>
+                        <li><em>"allow-same-origin"</em>: Permite que el contenido del iframe sea tratado como del mismo origen.</li>
+                        <li><em>"allow-top-navigation"</em>: Permite que el recurso navegue por un contexto de exploración de un nivel superior.</li>
+                        <li><em>"allow-forms"</em>: Permite formularios.</li>
+                        <li><em>"allow-scripts"</em>: Permite que se ejecuten scripts.</li>
+                        <li><a href="https://www.w3schools.com/tags/att_iframe_sandbox.asp">Lista completa de valores <em>sandbox</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Ejemplo de declaración</h2>
+            <pre class="cuadro_declaracion">
+            &lt;iframe srcdoc="&lt;p&gt;Esto es un Iframe&lt;/p&gt;"
+                Iframes no soportados.
+            &lt;/iframe&gt;
+</pre>
+
+            <h2>Ejemplo de visualización</h2>
+            <iframe srcdoc="<p>Esto es un Iframe</p>">
+                Iframes no soportados.
+            </iframe>
+
+        </section>
+        <section>
+            <h1>Embed</h1>
+            <p>La etiqueta <ap>embed</ap> sirve para insertar una aplicación externa o de contenido interactivo (plug-in).</p>
+            <h2>Atributos</h2>
+            <ul>
+                <li><em>"width"</em>: Anchura del plug-in.</li>
+                <li><em>"height"</em>: Altura del plug-in.</li>
+                <li><em>"src"</em>: URL externa donde esta ubicado el plug-in</li>
+                <li><em>"type"</em>: Tipo de contenido, es un valor <i>media_type</i><a href="https://www.iana.org/assignments/media-types/media-types.xhtml">Lista de <i>media_types</i></a>.</li>
+                <li><em>"atributos propios del plug-in"</em>: Los valores variaran segun las especificaciones del plug-in.</li>
+            </ul>
+
+            <h2>Ejemplo de declaración</h2>
+            <pre class="cuadro_declaracion">
+            &lt;embed src= "flash/d12.swf&gt;
+            </pre>
+            <h2>Ejemplo de visualización</h2>
+            <embed src="flash/d12.swf">
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+</body>
+</html>

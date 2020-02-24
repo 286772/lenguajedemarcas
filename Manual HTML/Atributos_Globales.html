@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Atributos Globales</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="cuadro_central">
+
+        <section>
+
+            <h1>ATRIBUTOS GLOBALES FRECUENTES</h1>
+            <p>En esta seccion definiremos algunos de los atributos globales más frecuentes que cualquier elemento HTML puede incorporar.</p>
+            <p>Para una lista completa de los atributos: <a href="https://www.w3schools.com/tags/ref_attributes.asp">TODOS LOS ATRIBUTOS HTML</a></p>
+
+            <h2>TABLA RESUMEN</h2>
+            <table class="tabla_resumen">
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas, en este caso la cabecera-->
+                    <th class="columna_tabla"><b>Atributo</b></th>
+                    <th style="text-align: center"><b>Utilización</b></th>
+                </tr>
+
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">class</td>
+                    <td>Nombre de una clase (o clases). se utiliza en conjunto a hojas de estilo y asigna una clase al elemento.</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">id</td>
+                    <td>Identificador único para un elemento, no puede haber otro igual en todo el documento HTML. Se utiliza para referirse al elemento desde vinculos, hojas de estilo...</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">lang</td>
+                    <td>El lenguaje utilizado en el contenido del elemento. Su valor ha de ser un lenguaje válido (<em>"en"</em>, <em>"es"</em>...).</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">style</td>
+                    <td>Se utiliza para especificar el estilo de un elemento, como el color, tipo de letra, tamaño... sin necesidad de una clase, ni una hoja, de estilos. Se utiliza para aplicar estilos "in situ"</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">title</td>
+                    <td>Linea de texto que presenta información adicional sobre el elemento. Normalmente los navegadores lo muestran como una cajita emergente.</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">translate</td>
+                    <td>Un valor booleano ("yes" o "no"), que indica si el contenido del elemento debe ser traducido cuando el docuemnto es adaptado a la lengua local.</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">dir</td>
+                    <td>
+                        Un atributo que indica la direccionalidada del texto. Puede tener como valores:
+                        <ul>
+                            <li><i>"ltr"</i>: Para idiomas que se escriben de izquierda a derecha.</li>
+                            <li><i>"rtl"</i>: Para idiomas que se escriben de deracha a izquierda.</li>
+                            <li><i>"auto"</i>: Permite al navegador que decida segun el contenido de la etiqueta.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">hidden</td>
+                    <td>
+                        Sirve para ocultar el elemento. Este elemento no se mostrará al usuario de la página.
+                        Es un valor <em>"booleano"</em>, esta o no esta. Se declara sin valor (esto es, sin poner = detras de él) y <strong>no se hereda</strong>.
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Declaración</h2>
+            <p>
+                Todos los atributos globales se declaran igual (con excepciones), dentro de la etiqueta de apertura de un elemento.
+                Despues se coloca el atributo seguido de = y luego se declara un valor válido entre comillas dobles. Cuando existan varios atriburos, se concatenaran con espacios en blanco.
+            </p>
+            <code class="cuadro_declaracion"><ap>etiqueta atributo="valor del atributo"</ap><cr>etiqueta</cr></code>
+
+            <h3>Ejemplos</h3>
+            <h4>Ejemplo declaración (<em>id</em>, <em>lang</em> y <em>translate</em>)</h4>
+            <code class="cuadro_declaracion"><ap>span id="rosa_dolor" lang= "en" translate="no"</ap>This text it´s painful PINK<cr>span</cr></code>
+
+            <h4>Ejemplo de visualización (<em>id</em>, <em>lang</em> y <em>translate</em>)</h4>
+            <span id="rosa_dolor" lang="en" translate="no">This text it´s painful PINK</span>
+            <!-- El atributo translate= "no", pese a estar bien declarado segun la especificación, no funciona con el traductor del navegador Chrome -->
+        </section>
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+</body>
+</html>

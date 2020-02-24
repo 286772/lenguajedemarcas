@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Hiperenlaces</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="cuadro_central">
+        <h1>Hiperenlaces</h1>
+        <p>Comunmente llamados enlaces, permiten saltar directamente de una página web a otra, o saltar entre puntos de una misma página web (o documento HTML).</p>
+        <h2>Tipos de Hiperenlaces</h2>
+        <ul>
+            <li>Absolutos: URLs completas. Por ejemplo, la dirección completa del buscador de Google: <b>https://www.google.es/ </b></li>
+            <li>
+                Relativos:
+                <ul>
+                    <li>Mismo directorio: El nombre del documento HTML que esté en el mismo directorio y su extensión. Por ejemplo: <b>documento.html</b> </li>
+                    <li>Subdirectorio: El nombre del subdirectorio, / , y el nombre del documento html y su extensión. Por ejemplo: <b>subdirectorio/documento.html</b></li>
+                    <li>Directorio anterior: ../, seguido del nombre del documento html html y su extensión. Por ejemplo: <b>../documento.html</b></li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Declaración de hiperenlaces</h2>
+        <p>
+            Los hiperenlaces se definen en la etiqueta <ap>a</ap>, con el atributo <em>href=</em>.
+            El "valor"  de <em>href=</em> es la dirección del enlace y el contenido de <ap>a</ap> será el texto que aparecerá en el hyperenlace.
+            La declaración será así para un enlace absoluto:
+        </p>
+        <pre class="cuadro_declaracion">
+    &lt;a href="https://www.google.es/"&gt;GOOGLE&lt;/a&gt;
+</pre>
+        <p>Que se verá así:</p>
+        <div class="cuadro_visualizacion">
+            <a href="https://www.google.es/">GOOGLE</a>
+        </div>
+        <h2>Atributos de los hiperenlaces</h2>
+        <p>Los atributos de <ap>a</ap> (ademas de <em>href</em>) pueden ser:</p>
+        <ul>
+            <li id="att_target">
+                <em>target</em>: Especifica donde se abrirá el documento vinculado. Puede tener los <em>"valores"</em>:
+                <ul>
+                    <li><em>"_blank"</em>: Abre el documento en una nueva pestaña.</li>
+                    <li><em>"_self"</em>: Abre el documento en la misma pestaña donde se hizo click. Es el predeterminado.</li>
+                    <li><em>"_parent"</em>: Abre el documento en el marco "padre".</li>
+                    <li><em>"_top"</em>: Abre el documento en el cuerpo completo de la ventana.</li>
+                    <li><em>nombre del marco</em>: Abre el documento en el marco identificado con el nombre.</li>
+                </ul>
+            </li>
+            <li id="att_download"><em>download</em>: Atributo booleano (está o no está), <strong>no</strong> tiene <em>"valor"</em>. En lugar de llevarte a otro documento, descarga el contenido de <em>href</em>.</liid>
+        </ul>
+        <p>Todos estos atributos se declaran despues de <em>href</em></p>
+        <h2>Enlaces locales</h2>
+        <p>Esto son saltos dentro del mismo documento HTML. Esto es tan secillo como:</p>
+        <ol>
+            <li>Declarar en cualquier elemento (<ap>etiqueta</ap>) un atributo <em>name</em> o <em>id</em></li>
+            <li>
+                Colocar en el <em>"valor"</em> del <em>href</em> de un hiperenlace el <em>"valor"</em>de:
+                <ul>
+                    <li>Un atributo <em>id</em>.</li>
+                    <li>Un atributo <em>name</em>. Desaprobado en HTML 5.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Tambien se puede hacer un enlace al inicio del mismo documento dando el <em>"valor"</em> "#top" al atributo <em>href</em>.</p>
+        <p>
+            Se pueden realizar un enlace combinando los parametros locales y globales. De esta manera se creara un enlace a otro documento HTML y, dentro de este, iremos a un punto en concreto.
+            Para declararlo tan solo hay que concatenar una URL, seguida de # y el <em>"valor"</em> de un identificador <em>name</em> o <em>id</em>. Se declara tal y como sigue:
+        </p>
+        <pre class="cuadro_declaracion">
+    &lt;a href="URL#valor_del_identificador"&gt;Texto del enlace&lt;/a&gt;
+</pre>
+        <h2>Imágenes como hiperenlaces</h2>
+        <p>Se puede utilizar una imagen como hiperenlace anidando la etiqueta <ap>img</ap> dentro de la etiqueta <ap>a</ap>, la cual ha de contener su correspondiente <em>href</em>.</p>
+        <h3>Ejemplo de declaración</h3>
+        <pre class="cuadro_declaracion">
+    &lt;a href="URL#valor_del_identificador" target="_blank"&gt;&lt;img src=gifs/tiger_uppercut.gif&gt;&lt;/img&gt;&lt;/a&gt;
+</pre>
+        <h3>Ejemplo de visualización</h3>
+        <a href="https://streetfighter.fandom.com/wiki/Tiger_Uppercut" target="_blank"><img src=gifs/tiger_uppercut.gif alt="Imaginate a Sagat haciendo un Tiger Uppercut"></a>
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+</body>
+</html>

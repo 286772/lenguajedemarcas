@@ -1,0 +1,110 @@
+﻿
+/*Aqui estoy creando unas clases para hacer etiquetas sin tener que utilizar los caracteres de escape para < ni >, ya que me colocara <> delante y detras de la palabra.*/
+ap::after {
+    content: ">";
+}
+
+ap::before {
+    content: "<";
+}
+
+cr::after {
+    content: ">";
+}
+
+cr::before {
+    content: "</";
+}
+/*Clase cabecera*/
+.cabecera {
+    background-image: url("imagenes/fondocabecera.jpg");
+    width: 100%;
+    height:15%;
+    float:left;
+
+
+}
+.titulocabecera {
+    text-align: center;
+    font-family: 'Book Antiqua';
+    font-size: 50px;
+}
+
+body {
+    background-color: white;
+    margin: 0%;
+}
+
+/*Menu de navegación*/
+.menu {
+    background-color: white;
+    width: 25%;
+    height: 75%;
+    float: left;
+ 
+}
+
+/*El cuerpo principal de documento*/
+.cuadro_central {
+    background-color: white;
+    width: 75%;
+    height: 75%;
+    float: left;
+  
+}   
+
+/*Pie de página*/
+.pie {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 10%;
+    float: left;
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 20px;
+}
+
+.cuadro_declaracion {
+    background-color: lightgrey;
+    
+}
+
+/*Tablas*/
+table.tabla_resumen {
+    width: 95%;
+    border: 2px solid #000;
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.tabla_resumen, td, th {
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+.columna_tabla {
+    text-align: center;
+    width: 15%;
+}
+/*Ejemplos*/
+
+#rosa_dolor {
+    color: hotpink
+}

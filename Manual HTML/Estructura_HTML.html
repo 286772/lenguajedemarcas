@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Comenzando HTML</title>
+</head>
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="cuadro_central">
+        <section>
+            <h1>Contenido básico de un documento HTML</h1>
+            <p>Todo documento html contiene:</p>
+            <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot; /&gt;
+		&lt;title&gt;Titulo de la página&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+        </section>
+        <section>
+            <h1>La etiqueta <ap>head</ap></h1>
+            <p>
+                Como ya he mencionado anteriormente, la parte head de una página Web no esta visible al usuario.La función de la cabecera es contener los metadatos del documento.
+                En esta sección explicare los elementos principales que se pueden incluir en la cabecera de un documento HTML.
+            </p>
+
+            <article>
+                <h2><ap>title</ap></h2>
+                <h3>Utilización y características</h3>
+                <p>Se utiliza para poner titulo a un documento. Tiene diversas utilidades:</p>
+                <ul>
+                    <li>Sera el texto que aparezca en la pestaña del navegador.</li>
+                    <li>Sera el nombre que se sugiera para añadirla a marcadores, o favoritos, del navegador.</li>
+                    <li>Es importante para los resultados de las búsquedas web. Lo utilizan como una de las referencias los buscadores web.</li>
+                </ul>
+                <h3>Declaración</h3>
+                <code class="cuadro_declaracion"><ap>title</ap><cr>title</cr></code>
+            </article>
+
+            <article>
+                <h2><ap>meta</ap></h2>
+                <h3>Utilización y características</h3>
+                <p>Empleamos esta etiqueta para definir la propiedades del documento HTML. Esta etiqueta recoge informacion acerca del autor, descripcion de la página, palabras clave, tipo de contenido...</p>
+                <h3>Declaración</h3>
+                <code class="cuadro_declaracion"><ap>meta</ap><cr>meta</cr></code>
+                <h3>Atributos</h3>
+                <ul>
+                    <li>
+                        <b>name:</b> Dependiendo del valor de este atributo estaremos describiendo una información u otra.
+                        Algunos ejemplos son:
+                        <ul>
+                            <li><em>author</em>, que identifica al autor del documento HTML.</li>
+                            <li><em>description</em>,que describe el contenido del documento.</li>
+                            <li><em>keywords</em>, que define las palabras clave en el documento.</li>
+                        </ul>
+                    </li>
+                    <li><b>content:</b> Especifica el valor del atributo <em>name</em>.</li>
+                    <li><b>charset:</b> Especifica el conjunto de caracteres que utilizara el documento.</li>
+                </ul>
+                <h3>Declaración</h3>
+                <p class="cuadro_declaracion">
+                    <code><ap>meta name="author" content="Nacho Salas"</ap></code><br />
+                    <code><ap>meta name="description" content="Etiquetas Head"</ap></code><br />
+                    <code><ap>meta name="keywords" content="HTML,HTML5,etiquetas,atributos,WEB"</ap></code><br />
+                    <code><ap>meta charset="utf-8"</ap></code><br />
+                </p>
+            </article>
+
+            <article>
+                <h2><ap>link</ap></h2>
+                <h3>Utilización y características</h3>
+                <p>Utilizaremos esta etiqueta para definir las rutas donde el documento HTML debe buscar hojas de estilos externas (CSS) o iconos.</p>
+                <h3>Declaración</h3>
+                <code class="cuadro_declaracion"><ap>link</ap><cr>link</cr></code>
+                <h3>Atributos</h3>
+                <ul>
+                    <li><b>href:</b>Ruta donde se encuentra el recurso</li>
+                    <li><b>rel:</b>Relecion entre el docuemto HTML y el que estamos enlazando</li>
+                    <li>
+                        <b>type:</b>Tipo de MIME. Es lo que utilizan los navegadores para reconocer el tipo de archivo, en lugar de la extensión.
+                        La lista es muy extensa, asi que aqui dejo un enlace: <a href="https://www.sitepoint.com/mime-types-complete-list/">Lista MIME</a>.
+                        Existen numerosos valores, pero las que nosotros vamos a utilizar mayoritariamente son:
+                        <ul>
+                            <li><em>"text/html"</em>: un archivo html (.html)</li>
+                            <li><em>"text/css"</em>: un archivo CSS (.css)</li>
+                        </ul>
+                    </li>
+                    <li><b>media:</b>Especifica el medio al que se aplica el recurso enlazado. Su valor ha de ser un <a href="#">media query</a>.</li>
+                </ul>
+                <h3>Declaración</h3>
+                <p class="cuadro_declaracion">
+                    <code><ap>link href="estilo.css" rel="stylesheet" type="text/css"</ap></code><br />
+                </p>
+            </article>
+
+            <article>
+                <h2><ap>base</ap></h2>
+                <h3>Utilización y características</h3>
+
+                <p> Sirve para dos cosas: </p>
+                <ul>
+                    <li>
+                        Proveer un <a href="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme">URI</a> "raiz"
+                        a partir del cual resolver todos los <a href="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme ">URIs</a> relativos al documento.
+                    </li>
+                    <li>
+                        Definir el comportamiento predeterminado en el que se abrirán todos los vínculos del documento.
+                    </li>
+                </ul>
+                <h3>Declaración</h3>
+                <code class="cuadro_declaracion"><ap>base</ap><cr>base</cr></code>
+                <h3>Atributos</h3>
+                <ul>
+                    <li><b>href:</b>Ruta raiz a partir de la cual se resolveran el resto de <a href="https://es.wikipedia.org/wiki/Identificador_de_recursos_uniforme">URIs</a></li>
+                    <li>
+                        <b>target:</b>El nombre o palabra clave del contexto de navegación predeterminado, que establecerá cómo los vínculos del documento deben ser abiertos. Este valor puede ser:
+                        <ul>
+                            <li><b>"_blank"</b>: El documento enlazado se abrirá en una pestaña nueva</li>
+                            <li><b>"_parent"</b>: El documento enlazado sea mostrado en el FRAMESET padre del frame actual. </li>
+                            <li><b>"_self"</b>: El documento enlazado será mostrado en el mismo frame o ventana donde está el enlace.</li>
+                            <li>
+                                <b>"_top"</b>: El enlace sea mostrado usando todo el espacio de la ventana del navegador ignorando toda la estructura de frames.
+                                Este valor debe ser usado siempre que creemos un enlace a una página externa a nuestro sitio web.
+                            </li>
+                            <li>atributo <em><a href="">name</a></em> de un <a href=""><ap>iframe</ap></a>. De esto hablaremos mas adelante.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Declaración</h3>
+                <p class="cuadro_declaracion">
+                    <code><ap>base href="Aqui iria el URI raíz" target="_blank"</ap></code><br />
+                </p>
+            </article>
+        </section>
+        <section>
+            <h1>BODY</h1>
+            <p>Como hemos comentado anteriormente. Es la parte principal del documento. Engloba todo el contenido que se muestra en la página web.</p>
+        </section>
+        <section>
+            <h1>Caracteres especiales</h1>
+            <table class="tabla_resumen">
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas, en este caso la cabecera-->
+                    <th class="columna_tabla"><b>Caracter</b></th>
+                    <th style="text-align: center"><b>Escape</b></th>
+
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">Espacio en blanco</td>
+                    <td class="columna_tabla">& nbsp ;</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">ñ</td>
+                    <td class="columna_tabla">& ntilde ;</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">Ñ</td>
+                    <td class="columna_tabla">& Ntilde ;</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">&lt;</td>
+                    <td class="columna_tabla">& lt ;</td>
+                </tr>
+                <!-- Fila -->
+                <tr>
+                    <!-- Columnas -->
+                    <td class="columna_tabla">&gt;</td>
+                    <td class="columna_tabla">& gt ;</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+
+</body>
+</html>

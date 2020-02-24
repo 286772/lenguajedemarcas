@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Multimedia</title>
+</head>
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="cuadro_central">
+        <section>
+            <article>
+                <h1>Etiquetas multimedia</h1>
+                <p>Se utiliza la etiqueta <ap>audio</ap> para insertar un audio.</p>
+                <p>Se utiliza la etiqueta <ap>video</ap> para insertar un video.</p>
+                <p>Dentro de estas se anidan la etiqueta <ap>source</ap> dentro de la cual se define la pista de audio.</p>
+                <ul>
+                    <li><ap>source</ap>: Definen los recursos multimedia (básicamente las pistas de video y la pistas de audio).</li>
+                    <li><ap>track</ap>: Definen los recursos de texto (subtitulos o comentarios en texto).<strong>Solo</strong> para <ap>video</ap></li>
+                </ul>
+                <h2>Archivos de audio admitidos</h2>
+                <ul>
+                    <li>.mp3</li>
+                    <li>.ogg</li>
+                    <li>.wav</li>
+                </ul>
+                <h2>Archivos de video admitidos</h2>
+                <ul>
+                    <li>.mp4</li>
+                    <li>.webm</li>
+                    <li>.ogg</li>
+                </ul>
+            </article>
+            <article>
+                <h1>Etiqueta <ap>audio</ap></h1>
+                <h3>Atributos</h3>
+                <ul>
+                    <li><em>"autoplay"</em>: Autoarranca al cargar la página.Valor booleano (sin valor).</li>
+                    <li><em>"controls"</em>: Muestra los controles.Valor booleano (sin valor).</li>
+                    <li><em>"loop"</em>: Empieza de nuevo al acabar.Valor booleano (sin valor).</li>
+                    <li><em>"muted"</em>: Comienza en silencio (mute).Valor booleano (sin valor).</li>
+                    <li>
+                        <em>"src"</em>: URL donde se ubica el recurso.
+                        <ul>
+                            <li>
+                                En el valor de la URL se pude especificar el tiempo de reproducción de los recursos. Para ello solo hay que añadir detrás de la URL #t=[tiempo de inicio],[tiempo de fin].
+                                Admite el formato en horas:minutos:segundos o en segundos (como float).
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h1>Etiqueta <ap>video</ap></h1>
+                <h2>Atributos</h2>
+                <ul>
+                    <li><em>"autoplay"</em>: Autoarranca al cargar la página.Valor booleano (sin valor).</li>
+                    <li><em>"controls"</em>: Muestra los controles.Valor booleano (sin valor).</li>
+                    <li><em>"loop"</em>: Empieza de nuevo al acabar.Valor booleano (sin valor).</li>
+                    <li><em>"muted"</em>: Comienza en silencio (mute).Valor booleano (sin valor).</li>
+                    <li>
+                        <em>"src"</em>: URL donde se ubica el recurso.
+                        <ul>
+                            <li>
+                                En el valor de la URL se pude especificar el tiempo de reproducción de los recursos. Para ello solo hay que añadir detrás de la URL #t=[tiempo de inicio],[tiempo de fin].
+                                Admite el formato en horas:minutos:segundos o en segundos (como float).
+                            </li>
+                        </ul>
+                    </li>
+                    <li><em>"width"</em>: Ancho (en px).</li>
+                    <li><em>"height"</em>: Alto (en px).</li>
+                    <li><em>"poster"</em>: URL donde se ubica la imagen que se mostrará mientras se carga el video.</li>
+                </ul>
+            </article>
+            <article>
+                <h1>Etiqueta <ap>source</ap></h1>
+                <p>Especifica un recurso de <ap>audio</ap> o <ap>video</ap>. Se anida dentro de éstas.</p>
+                <h2>Atributos</h2>
+                <ul>
+                    <li><em>"src"</em>: La URL del recurso.</li>
+                    <li><em>"type"</em>: El tipo de recurso utilizado.</li>
+                </ul>
+            </article>
+            <article>
+                <h1>Etiqueta <ap>track</ap></h1>
+                <p>Especifica una pista de texto para <ap>video</ap>. Sirve para poner subtitulos (por ejemplo). Se anida dentro de <ap>video</ap>.</p>
+                <h2>Atributos</h2>
+                <ul>
+                    <li><em>"default"</em>: la pista se habilitará si las preferencias del usuario no indican que otra pista sería más apropiada. Valor booleano (sin valor).</li>
+                    <li><em>"src"</em>: La URL del recurso.</li>
+                    <li><em>"label"</em>: Titulo de la pista de texto.</li>
+                    <li><em>"srclang"</em>: Especifica el lenguaje de la pista de texto. <strong>Obligatorio</strong> si kind="subtitulos".</li>
+                    <li>
+                        <em>"kind"</em>: Especifica el tipo de pista de texto. Sus <i>"valores"</i> pueden ser:
+                        <ul>
+                            <li><i>"captions"</i>:Traducción para sordos (dialogo y efectos de sonido).</li>
+                            <li><i>"chapters"</i>: Define titulos de capítulos (para navegación).</li>
+                            <li><i>"descriptions"</i>: Descripción textual del contenido del video (para ciegos).</li>
+                            <li><i>"metadata"</i>: Contenido en scripts. No es visible para el usuario.</li>
+                            <li><i>"subtitles"</i>: el contenido es para poner subtitulos.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <h1>Ejemplo de audio</h1>
+                <h2>Ejemplo de declaración</h2>
+                <pre class="cuadro_declaracion">
+                &lt;audio controls loop&gt;
+                    &lt;source src="audios/unforgiven.mp3" type="audio/mpeg"&gt;
+                &lt;/audio&gt;
+                </pre>
+                <h2>Ejemplo de visualización</h2>
+                <audio controls loop>
+                    <source src="audios/unforgiven.mp3" type="audio/mpeg">
+                </audio>
+            </article>
+
+            <article>
+                <h1>Ejemplo de video</h1>
+                <h2>Ejemplo de declaración</h2>
+                <pre class="cuadro_declaracion">
+                &lt;video controls poster="imagenes/chuck.jpg"&gt;
+                    &lt;source src="videos/patada.mp4#t=00:00:10,00:00:25" type="video/mp4"&gt;
+                    &lt;source src="videos/patada.m4a#t=00:00:10,00:00:25" type="video/m4a"&gt;
+                &lt;/video&gt;
+                </pre>
+                <h2>Ejemplo de visualización</h2>
+                <video controls poster="imagenes/chuck.jpg">
+                    <source src="videos/patada.mp4#t=00:00:10,00:00:25" type="video/mp4">
+                    <source src="videos/patada.m4a#t=00:00:10,00:00:25" type="video/m4a">
+                    <!-- Segun w3 Schools no deberia admitir video .m4a, pero me lo reconoce-->
+                </video>
+            </article>
+        </section>
+        <section></section>
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+</body>
+</html>

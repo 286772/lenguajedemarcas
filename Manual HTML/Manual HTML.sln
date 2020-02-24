@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CAC647B4-333C-4D5E-8149-D0BF399FAE3B}"
+	ProjectSection(SolutionItems) = preProject
+		plantilla_estilo.css = plantilla_estilo.css
+		plantilla_manual.html = plantilla_manual.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01F8CC8D-25A2-40C6-AE32-26C5470FF87A}
+	EndGlobalSection
+EndGlobal

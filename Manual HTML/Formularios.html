@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link href="plantilla_estilo.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Formularios</title>
+    </head>
+<body>
+    <header class="cabecera">
+        <section>
+            <h1 class="titulocabecera">MANUAL HTML Y CSS</h1>
+        </section>
+
+    </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                HTML
+                <ul>
+                    <li><a href="Estructura_HTML.html">Estructura HTML</a></li>
+                    <li>
+                        Elementos HTML5
+                        <ul>
+                            <li><a href="Atributos_Globales.html">Atributos globales</a></li>
+                            <li><a href="Etiquetas.html">Etiquetas</a></li>
+                            <li><a href="Hiperenlaces.html">Hiperenlaces</a></li>
+                            <li><a href="Multimedia.html">Multimedia</a></li>
+                            <li><a href="Contenido_encajado.html">Contenidos encajados</a></li>
+                            <li><a href="Tablas.html">Tablas</a></li>
+                            <li><a href="Formularios.html">Formularios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a>CSS</a>
+                <ul>
+                    <li><a href="Sintaxis_CSS.html">Sintaxis CSS</a></li>
+                    <li><a href="Selectores.html">Selectores</a></li>
+                    <li><a href="Propiedades.html">Propiedades</a></li>
+                    <li><a href="Estructura_de_caja.html">Estructura de caja</a></li>
+                    <li><a href="Posicion.html">Posición</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main class="cuadro_central">
+        <section>
+            <article>
+                <h1>La etiqueta <ap>form</ap></h1>
+                <p>La etiqueta form es la etiqueta principal del formulario y en ella anidaremos el resto de las etiquetas.</p>
+                <h2>Atributos</h2>
+                <ul>
+                    <li><em>"action"</em>: Define la acción a realizar cuando se envia el formulario. Normalmente su valor es una URL donde se envía.</li>
+                    <li>
+                        <em>"method"</em>: Especifica el metodo por el que se enviara el formulario; sus valores son:
+                        <ul>
+                            <li><i>"get"</i>: Los datos son visibles en el campo de dirección de la página</li>
+                            <li><i>"post"</i>: Se utiliza para enviar datos confidenciales</li>
+                        </ul>
+                    <li>
+                        <em>"enctype"</em>: Cómo se deben codificar los datos de formulario al enviarlos al servidor. Solo se admiten con el valor "post". Sus valores son:
+                        <ul>
+                            <li>
+                                <i>"application/x-www-form-urlencoded"</i>:Valor por defecto. Todos los caracteres se codifican antes de enviarse (los espacios se convierten en símbolos "+"
+                                y los caracteres especiales se convierten en valores ASCII HEX)
+                            </li>
+                            <li><i>"multipart/form-data"</i>: No hay caracteres codificados. Este valor es obligatorio cuando utiliza formularios que tienen un control de carga de archivos.</li>
+                            <li><i>"text/plain"</i>: Los espacios se convierten en símbolos "+", pero no se codifican los caracteres especiales</li>
+                        </ul>
+                    </li>
+                    <li><em>"accept-charset"</em>: La codificacion de caracteres que se utilizará para el envío del formulario. Su valor ha de ser un conjunto de caracteres (ej: UTF-8).</li>
+                </ul>
+            </article>
+            <article>
+                <h1>La etiqueta <ap>label</ap></h1>
+                <p>
+                    Se utiliza para que el texto sirva como acción. Se añade a otras etiquetas y las complementa.
+                    Su atributo <em>for</em> ha tener como "valor" el valor del atributo <em>id</em> del elemento al que pretendemos enlazarla. Tambien puede tener un <em>name</em>.
+                </p>
+            </article>
+            <article>
+                <h1>La etiqueta <ap>input</ap></h1>
+                <p>
+                    Esta etiqueta crea un campo de entrada donde el usuario puede introducir datos. Puede contener los siguientes atributos generales (independientemente de su <em>type</em>.:
+                    <ul>
+                        <li><em>"id"</em>: Para poder relacionarla con un <ap>label</ap>.</li>
+                        <li><em>"name"</em>: Pone nombre al imput</li>
+                        <li><em>"value"</em>: Es un texto (excepto <em>type</em> concreto). Especifica el texto con el que comienza el <em>input</em> rellenado.</li>
+                        <li><em>"required"</em>: Especifica si ese campo de entrada es obligatorio antes de enviar el formulario. Es un valor booleano.</li>
+                        <li><em>"size"</em>: Es un número. Especifica el ancho visible, en caracteres, del un elemento. </li>
+                        <li><em>"type"</em>: Especifica el tipo de dato que se va a introducir. Esto limita algunos de los atributos del elemento. Vamos a verlo más en detalle.</li>
+                    </ul>
+                </p>
+                <h2>Tipos de <ap>input</ap></h2>
+
+                <h3>Texto</h3>
+                <p>type="text"</p>
+                <p>Sirve para introducir texto.</p>
+                <h4>Atributos específicos</h4>
+                <ul>
+                    <li><em>maxlength</em>: Longitud máxima, en caracteres, que pueden introducirse.</li>
+                </ul>
+
+                <h3>Botón de Envío</h3>
+                <p>Crea un botón para enviar el formulario.</p>
+                <p>type=submit</p>
+                <h4>Atributos específicos</h4>
+                <p>No tiene. Con <em>value</em> se le coloca un texto.</p>
+
+                <h3>Valor numérico</h3>
+                <p>Sirve para introducir números</p>
+                <p>type="number"</p>
+                <h4>Atributos específicos</h4>
+                <ul>
+                    <li><em>"min"</em>: Valor mínimo.</li>
+                    <li><em>"max"</em>: Valor máximo.</li>
+                    <li><em>"step"</em>: Intervalo entre números válidos. Por ejemplo, si el valor del atributo es 2, los numeros válidos serán: 0, 2, 4, 6...</li>
+                    <li><em>"value"</em>: Ha de ser un número.</li>
+                </ul>
+
+                <h3>Casilla de verificación</h3>
+                <p>Crea un elemento con una casilla para verificarlo.</p>
+                <p>type="checkbox"</p>
+                <h4>Atributos específicos</h4>
+                <ul>
+                    <li><em>"name"</em>: Aqui enumeraremos las diferentes <ap>input type="checkbox"</ap> como; ch1, ch2, ch3 ...</li>
+                    <li><em>"value"</em>: Podemos darle un valor como texto. Tambien podemos marcarla cono "on" u "off" de manera predeterminada y nos dara igual como la marque el usuario.</li>
+                    <li><em>"checked"</em>: La casilla comienza marcada. Valor booleano.</li>
+                </ul>
+                <h3>Boton de opción</h3>
+                <p>Establece inputs de opciones, solo se puede elegir una.</p>
+                <p>type="radio"</p>
+                <h4>Atributos específicos</h4>
+                <ul>
+                    <li><em>"name"</em>: Todas las opciones han de tener el mismo nombre, asi se asocian. </li>
+                    <li><em>"value"</em>: Aqui enumeraremos las diferentes <ap>input type="radio"</ap> como; ch1, ch2, ch3 ...</li>
+                    <li><em>"checked"</em>: La casilla comienza marcada. Valor booleano.</li>
+                </ul>
+            </article>
+            <article>
+                <h1>Menús</h1>
+                <p>
+                    Para crear menús utilizaremos la etiqueta <ap>select</ap>. Esta etiqueta tiene los atributos:
+                </p>
+                <ul>
+                    <li><em>"name"</em>: nombre del menú.</li>
+                    <li><em>"size"</em>: numero de opciones <strong>visibles</strong> del menú.</li>
+                    <li><em>"multiple"</em>: especifica si es posible elegir mas de una opción.</li>
+                </ul>
+                <p>Dentro de la etiqueta <ap>select</ap> anidaremos las etiquetas:</p>
+                <ul>
+                    <li>
+                        <ap>option</ap>: que serán las diferentes opciones. Tiene los siguientes atributos:
+                        <ul>
+                            <li><em>"value"</em>: Los valores de las opciones.</li>
+                            <li><em>"selected"</em>: La que opcion que viene seleccionada por defecto. Es un valor booleano.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>
+                    Tambien podemos agrupar estas opciones con la etiqueta <ap>optgroup</ap> para crear submenus. Admite el atributo <em>label</em> en el cual pondremos el criterio de agrupación.
+                    Se declara como un nivel intermedio entre <ap>select</ap> y <ap>option</ap>. Se anida en la primera y las <ap>option</ap> van anidadas dentro de ella.
+                </p>
+            </article>
+        </section>
+
+    </main>
+    <footer class="pie">
+        <p class="nombre">Creado por: Nacho Salas</p>
+    </footer>
+</body>
+</html>

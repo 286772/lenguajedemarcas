@@ -1,0 +1,8 @@
+ATRIBUTOS PARA IMAGENES
+
+ <!-- Fila -->
+            <tr>
+                <!-- Columnas -->
+                <td><a href="">alt</a></td>
+                <td>Muestra un texto alternativo que se utilizará si una imagen no se puede visualizar.</td>
+            </tr>
