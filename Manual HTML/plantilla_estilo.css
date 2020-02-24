@@ -36,12 +36,26 @@ body {
 }
 
 /*Menu de navegación*/
-.menu {
-    background-color: white;
-    width: 25%;
-    height: 75%;
-    float: left;
- 
+/*Menor de 750px*/
+@media (max-width: 750px) {
+    .menu {
+        background-color: white;
+        width: 25%;
+        height: 75%;
+        float: left;
+        display: none;
+    }
+}
+/*Menu de navegación*/
+/*Mayor de 751px*/
+@media (min-width: 751px) {
+    .menu {
+        background-color: white;
+        width: 25%;
+        height: 75%;
+        float: left;
+        
+    }
 }
 
 /*El cuerpo principal de documento*/
